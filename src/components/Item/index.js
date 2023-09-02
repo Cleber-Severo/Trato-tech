@@ -13,6 +13,7 @@ const iconeProps = {
 export default function Item({titulo, foto, preco, descricao, favorito, id}) {
 
     const dispatch = useDispatch(); 
+    
     function resolverFavorito() {
         dispatch(mudarFavorito(id));
     }
