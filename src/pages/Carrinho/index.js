@@ -23,7 +23,7 @@ function Carrinho() {
             descricao='Confira os produtos que você acidionou no carrinho'
         />
         <div className={styles.carrinho}>
-            {carrinho.map( item => <Item key={item.id} {...item} />)}
+            {carrinho.map( item => <Item key={item.id} {...item} carrinho />)}
             <div className={styles.total}>
                 <strong>
                     Resumo da compra
